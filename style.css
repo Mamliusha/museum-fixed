@@ -86,9 +86,7 @@ h5{
 .visiting h2{
     color: #9D8665;
 }
-.visiting div{
-    border-top:1px solid #710707;
-}
+
 .gallery{
     padding-top: 50px;
     display: flex;
@@ -111,30 +109,141 @@ article h5{
     padding: 0;
     margin: 0;
 }
-p{
+p,a{
 font-family: 'Roboto', sans-serif;
 font-weight: 100;
 font-size: 18;
+text-decoration: none;
 }
-
+a{
+    color: white;
+}
+.footer_nav{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 50px;
+    row-gap: 15px;
+}
 .explore h2,
 .explore h5{
     color: white;
 }
 
-.explore h2{
+.h2_white{
     padding-bottom: 15px;
     border-bottom: 1px solid #710707;
+    color: #9D8665;
 }
 .section_container.explore{
     display: flex;
     flex-direction: row;
 }
 
+.gallery-section {
+  padding: 75px 0;
+}
+.gallery-header {
+  font-family: 'Forum', serif;
+  font-size: 70px;
+  text-transform: uppercase;
+  color: white;
+  border-bottom: 1px solid #710707;
+  padding-bottom: 30px;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  margin-top: 50px;
+}
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.tickets-section {
+  padding: 75px 0;
+}
+.tickets-title {
+  font-family: 'Forum', serif;
+  font-size: 70px;
+  text-transform: uppercase;
+  color: #030303;
+  border-bottom: 1px solid #710707;
+  padding-bottom: 30px;
+}
+.tickets_content{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+}
+.radio{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.bold{
+    font-size: 28px;
+    font-weight: bold;
+}
+.buy_button{
+    width: 175px;
+    height: 50px;
+    color: white;
+    background-color: #030303;
+    font-family: 'Roboto',sans-serif;
+    font-size: 22px;
+}
+.contacts{
+    display: flex;
+}
+.contacts-section {
+  padding: 75px 0;
+  background-color: #030303;
+  color: white;
+}
+.contacts_info{
+    display: flex;
+}
+
+footer{
+    background-color: #030303;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 30px;
+}
+
+.footer_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 25px;
+}
 .text {
     width: 100%;
 display: flex;
 flex-direction: column;
+}
+.footer_logo{
+    display: flex;
+    gap: 10px;
+}
+.footer_contacts{
+    display: flex;
+    gap: 15px;
+}
+
+.footer_bottom{
+    border-top: 0.5px solid white;
+    display: flex;
+    color: white;
+    justify-content: space-around;
 }
 
 .text h5{
